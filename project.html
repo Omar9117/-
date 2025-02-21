@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>سوء التغذية</title>
+</head>
+<body>
+<div style="text-align: center; background: linear-gradient(120deg, #ffddd2, #83c5be, #006d77); min-height: 100vh; padding: 20px;">
+    <h1 style="color: #006d77; font-family: 'Amiri', serif; text-shadow: 2px 2px 4px rgba(0,0,0,0.2); font-size: 3em; background-color: rgba(255,255,255,0.9); padding: 20px; border-radius: 15px; display: inline-block;">سوء التغذية</h1>
+    
+    <div style="display: flex; justify-content: space-around; flex-wrap: wrap; gap: 20px; margin: 20px;">
+        <!-- Obesity Section -->
+        <div class="disease-section" style="flex: 1; min-width: 300px; max-width: 600px; padding: 20px; background: rgba(255,255,255,0.9); border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+            <h2 style="color: #006d77; font-family: 'Cairo', sans-serif; font-size: 2.5em;">السمنة</h2>
+            
+            <!-- Main Obesity Buttons -->
+            <div style="display: flex; flex-direction: column; gap: 10px; margin: 20px 0;">
+                <button onclick="showContent('obesity-causes', 'السمنة تنتج عن عدم التوازن بين السعرات المستهلكة والمحروقة، العوامل الوراثية، نمط الحياة غير الصحي، قلة النشاط البدني')" style="padding: 12px 25px; background-color: #006d77; color: white; border: none; border-radius: 25px; cursor: pointer; font-family: 'Tajawal', sans-serif; transition: all 0.3s ease;">الأسباب</button>
+                
+                <button onclick="showContent('obesity-symptoms', 'زيادة الوزن، صعوبة التنفس، آلام المفاصل، التعب المستمر، ارتفاع ضغط الدم')" style="padding: 12px 25px; background-color: #83c5be; color: white; border: none; border-radius: 25px; cursor: pointer; font-family: 'Tajawal', sans-serif; transition: all 0.3s ease;">الأعراض</button>
+                
+                <button onclick="showContent('obesity-treatment', 'تغيير نمط الحياة، اتباع نظام غذائي صحي، ممارسة الرياضة بانتظام، العلاج السلوكي، الجراحة في الحالات الشديدة')" style="padding: 12px 25px; background-color: #e29578; color: white; border: none; border-radius: 25px; cursor: pointer; font-family: 'Tajawal', sans-serif; transition: all 0.3s ease;">العلاج</button>
+                
+                <button onclick="showContent('obesity-prevention', 'تناول الطعام الصحي، ممارسة الرياضة يومياً، الحصول على قسط كافٍ من النوم، تجنب الأطعمة السريعة، شرب الماء بكثرة')" style="padding: 12px 25px; background-color: #ffddd2; color: #006d77; border: none; border-radius: 25px; cursor: pointer; font-family: 'Tajawal', sans-serif; transition: all 0.3s ease;">الوقاية</button>
+                
+                <button onclick="showContent('obesity-complications', 'أمراض القلب، السكري، ارتفاع ضغط الدم، مشاكل المفاصل، مشاكل التنفس أثناء النوم')" style="padding: 12px 25px; background-color: #006d77; color: white; border: none; border-radius: 25px; cursor: pointer; font-family: 'Tajawal', sans-serif; transition: all 0.3s ease;">المضاعفات</button>
+            </div>
+        </div>
+
+        <!-- PKU Section -->
+        <div class="disease-section" style="flex: 1; min-width: 300px; max-width: 600px; padding: 20px; background: rgba(255,255,255,0.9); border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+            <h2 style="color: #006d77; font-family: 'Cairo', sans-serif; font-size: 2.5em;">بيلة الفينيل كيتون (PKU)</h2>
+            
+            <!-- Main PKU Buttons -->
+            <div style="display: flex; flex-direction: column; gap: 10px; margin: 20px 0;">
+                <button onclick="showContent('pku-causes', 'طفرة في الجين المسؤول عن إنتاج إنزيم فينيل ألانين هيدروكسيلاز، مرض وراثي')" style="padding: 12px 25px; background-color: #006d77; color: white; border: none; border-radius: 25px; cursor: pointer; font-family: 'Tajawal', sans-serif; transition: all 0.3s ease;">الأسباب</button>
+                
+                <button onclick="showContent('pku-symptoms', 'تأخر النمو، صعوبات في التعلم، رائحة جسم غير طبيعية، مشاكل سلوكية، نوبات صرع')" style="padding: 12px 25px; background-color: #83c5be; color: white; border: none; border-radius: 25px; cursor: pointer; font-family: 'Tajawal', sans-serif; transition: all 0.3s ease;">الأعراض</button>
+                
+                <button onclick="showContent('pku-diagnosis', 'فحص حديثي الولادة، تحليل الدم، الفحص الجيني')" style="padding: 12px 25px; background-color: #e29578; color: white; border: none; border-radius: 25px; cursor: pointer; font-family: 'Tajawal', sans-serif; transition: all 0.3s ease;">التشخيص</button>
+                
+                <button onclick="showContent('pku-treatment', 'نظام غذائي خاص، مكملات غذائية، متابعة طبية منتظمة')" style="padding: 12px 25px; background-color: #ffddd2; color: #006d77; border: none; border-radius: 25px; cursor: pointer; font-family: 'Tajawal', sans-serif; transition: all 0.3s ease;">العلاج</button>
+                
+                <button onclick="showContent('pku-diet', 'تجنب الأطعمة الغنية بالبروتين، تناول أغذية خاصة منخفضة الفينيل ألانين، متابعة مستويات الحمض الأميني')" style="padding: 12px 25px; background-color: #006d77; color: white; border: none; border-radius: 25px; cursor: pointer; font-family: 'Tajawal', sans-serif; transition: all 0.3s ease;">النظام الغذائي</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Content Display Area -->
+    <div id="contentDisplay" style="margin: 20px auto; padding: 20px; background-color: rgba(255,255,255,0.9); border-radius: 15px; display: none; font-family: 'Noto Sans Arabic', sans-serif; text-align: right; max-width: 800px;"></div>
+</div>
+
+<script>
+function showContent(id, content) {
+    var displayArea = document.getElementById('contentDisplay');
+    displayArea.innerHTML = content;
+    displayArea.style.display = 'block';
+}
+</script>
+
+<!-- Arabic Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Amiri&family=Cairo&family=Tajawal&family=Noto+Sans+Arabic&display=swap" rel="stylesheet">
+
+<style>
+button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+</style>
+</body>
+</html>
